@@ -14,5 +14,19 @@ public class RectangleTest {
         Assert.assertEquals(200, computedArea);
     }
 
+    @Test
+    public void changeWidth(){
+        Shape rectangle = new Rectangle(10, 20);
+        rectangle.setWidth(11);
+        Assert.assertEquals(11, rectangle.getWidth());
+    }
+
+    @Test
+    public void changeHeight(){
+        Shape rectangle = new Rectangle(10, 20);
+        rectangle.setHeight(11);
+        Assert.assertEquals(11, rectangle.getHeight());
+    }
+
 }
 
