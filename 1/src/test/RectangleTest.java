@@ -1,5 +1,7 @@
 package test;
 
+import main.Rectangle;
+import main.Shape;
 import org.junit.Test;
 import org.junit.Assert;
 
