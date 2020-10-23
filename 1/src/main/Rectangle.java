@@ -1,16 +1,16 @@
 package main;
 
-public class Rectangle implements Shape{
+public class Rectangle implements Shape {
 
     private int width;
     private int height;
 
     public Rectangle(int width, int height) {
-        this.width = width;
-        this.height = height;
+        this.setWidth(width);
+        this.setHeight(height);
     }
 
-    public int computeArea(){
+    public int computeArea() {
         return this.height * this.width;
     }
 
@@ -19,6 +19,8 @@ public class Rectangle implements Shape{
     }
 
     public void setWidth(int width) {
+        if (width <= 0)
+            return;
         this.width = width;
     }
 
@@ -27,6 +29,8 @@ public class Rectangle implements Shape{
     }
 
     public void setHeight(int height) {
+        if (height <= 0)
+            return;
         this.height = height;
     }
 }
